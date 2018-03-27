@@ -1,0 +1,9 @@
+.hidden {
+    display: none;
+}
+
+#device-name p {
+    font-size: 16px;
+    margin: 0;
+}
+

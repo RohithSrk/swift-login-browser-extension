@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Swift Login",
+    "description": "Swift Login sessions receiver extension.",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup/swiftlogin.html",
+        "default_title": "Swift Login"
+    },
+
+    "background": {
+        "scripts": [ "vendor/require.js", "scripts/background.js" ]
+    },
+    
+    "content_security_policy": "script-src 'self' https://*.firebase.com https://*.firebaseio.com; object-src 'self'",
+
+    "icons": {
+        "48": "icon.png",
+        "96": "icon@2x.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "cookies",
+        "<all_urls>"
+    ],
+    
+    "incognito" : "split"
+}

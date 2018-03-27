@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swift Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="popup">
+        <div id="device-name">
+            <p id="name" title="Click To Edit"></p>
+            <div id="edit-device-name" class="hidden">
+                <input type="text" name="device-name" id="name-input">
+                <button id="save">Save</button>
+            </div>
+        </div>
+        <div id="uid"></div>
+        <div id="qrcode"></div>
+<!--        <button id="reset">RESET</button>-->
+<!--        <p>Resetting disconnects all privously connected devices on this browser.</p>-->
+    </div>
+    <script src="qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
